@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="cv.css">
+</head>
+
+<body>
+    <div class="cv-form" id="cv-form">
+        <header>
+            <h1>Resume Builder</h1>
+            <p>Fast, Easy & Free</p>
+        </header>
+        <div class="personal1" id="private">
+            <h2>Personal Information</h2>
+            <div class="box">
+                <label for="fname">First Name</label>
+                <input type="text" placeholder="Enter Your First Name" required id="getFName">
+            </div>
+            <div class="box">
+                <label for="lname">Last Name</label>
+                <input type="text" placeholder="Enter Your Last Name" required id="getLName">
+            </div>
+            <div class="box">
+                <label for="role">Role</label>
+                <input type="text" placeholder="Enter Your Role" required id="getRole">
+            </div>
+            <div class="box" id="photo">
+                <label for="role">Select Your Image</label>
+                <input type="file" accept=".jpg .jpeg" id="getPhoto" required>
+            </div>
+            <div class="box">
+                <input type="submit" value="NEXT" id="next1" class="button">
+            </div>
+        </div>
+        <div class="contact1" id="contact">
+            <h2>Contact</h2>
+            <div class="box">
+                <label for="mobile">Mobile Number</label>
+                <input type="text" placeholder="Enter Your Mobile Number" required id="getMob">
+            </div>
+            <div class="box">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter Your Email" required id="getEmail">
+            </div>
+            <div class="box">
+                <label for="location">Location</label>
+                <input type="text" placeholder="Enter Your Location" required id="getLoc">
+            </div>
+            <div class="box">
+                <input type="button" value="BACK" id="back2" class="button">
+                <input type="submit" value="NEXT" id="next2" class="button">
+            </div>
+        </div>
+        <div class="language1" id="language">
+            <h2>Language</h2>
+            <div class="box">
+                <label for="lang">Language</label>
+                <input type="text" placeholder="Enter Language" required id="getLang">
+                <button id="addLang">ADD</button>
+            </div>
+            <div class="box">
+                <input type="button" value="BACK" id="back3" class="button">
+                <input type="submit" value="NEXT" id="next3" class="button">
+            </div>
+        </div>
+        <div class="skill1" id="skill">
+            <h2>Skill</h2>
+            <div class="box">
+                <label for="skill">Skill</label>
+                <input type="text" placeholder="Enter Skill" required id="getSkill">
+                <button id="addSkill">ADD</button>
+            </div>
+            <div class="box">
+                <input type="button" value="BACK" id="back4" class="button">
+                <input type="submit" value="NEXT" id="next4" class="button">
+            </div>
+        </div>
+        <div class="education1" id="education">
+            <h2>Education</h2>
+            <div class="box">
+                <label for="degree">Degree Name</label>
+                <input type="text" placeholder="Enter Degree" required id="getDegree">
+            </div>
+            <div class="box" id="from">
+                <div class="from">
+                    <label>From</label>
+                    <input type="text" placeholder="From" required id="getEduFrom">
+                </div>
+                <div class="from">
+                    <label>To</label>
+                    <input type="text" placeholder="To" required id="getEduTo">
+                </div>
+            </div>
+            <div class="box">
+                <label for="skill">About Education</label>
+                <input type="text" placeholder="Enter About Education" required id="getAEdu">
+                <button id="addEdu">ADD</button>
+            </div>
+            <div class="box">
+                <input type="button" value="BACK" id="back5" class="button">
+                <input type="submit" value="NEXT" id="next5" class="button">
+            </div>
+        </div>
+        <div class="experience1" id="experience">
+            <h2>Experience</h2>
+            <div class="box">
+                <label for="exp">Job/Internship/Project</label>
+                <input type="text" placeholder="Enter Here" required id="getJob">
+            </div>
+            <div class="box" id="from">
+                <div class="from">
+                    <label>From</label>
+                    <input type="text" placeholder="From" required id="getJobFrom">
+                </div>
+                <div class="from">
+                    <label>To</label>
+                    <input type="text" placeholder="To" required id="getJobTo">
+                </div>
+            </div>
+            <div class="box">
+                <label for="skill">About</label>
+                <input type="text" placeholder="Enter About" required id="getAJob">
+                <button id="addExp">ADD</button>
+            </div>
+            <div class="box">
+                <input type="button" value="BACK" id="back6" class="button">
+                <input type="submit" value="NEXT" id="next6" class="button">
+            </div>
+        </div>
+        <div class="hobby1" id="hobby">
+            <h2>Hobby</h2>
+            <div class="box">
+                <label for="hobby">Hobby</label>
+                <input type="text" placeholder="Enter Your Hobby" required id="getHobby">
+                <button id="addHobby">ADD</button>
+            </div>
+            <div class="box">
+                <input type="button" value="BACK" id="back7" class="button">
+                <input type="submit" value="NEXT" id="next7" class="button">
+            </div>
+        </div>
+        <div class="certi1" id="certificate">
+            <h2>Certificate</h2>
+            <div class="box">
+                <label for="exp">Certificate</label>
+                <input type="text" placeholder="Enter Here" required id="getCerti">
+            </div>
+            <div class="box">
+                <label for="skill">Description</label>
+                <input type="text" placeholder="Enter Here" required id="getACerti">
+                <button id="addCerti">ADD</button>
+            </div>
+            <div class="box">
+                <input type="button" value="BACK" id="back8" class="button">
+                <input type="submit" value="NEXT" id="next8" class="button">
+            </div>
+        </div>
+        <div class="act1" id="position">
+            <h2>Other Activity</h2>
+            <div class="box">
+                <label for="exp">Activity</label>
+                <input type="text" placeholder="Enter Here" required id="getAct">
+            </div>
+            <div class="box">
+                <label for="skill">About</label>
+                <input type="text" placeholder="Enter Here" required id="getAAct">
+                <button id="addAct">ADD</button>
+            </div>
+            <div class="box">
+                <input type="button" value="BACK" id="back9" class="button">
+                <input type="submit" value="GENERATE" id="Generate" class="button">
+            </div>
+        </div>
+    </div>
+    <div class="main" id="main">
+        <div class="left">
+            <img src="dp.jpg" id="myImg">
+            <div class="name">
+                <h3 id="setName"></h3>
+                <p id="setRole"></p>
+            </div>
+            <div class="contact">
+                <h4>CONTACT<br>
+                    <hr>
+                </h4>
+
+                <p id="setMob"></p>
+                <p id="setEmail"></p>
+                <p id="setLoc"></p>
+            </div>
+            <div class="language">
+                <h4>LANGUAGE<br>
+                    <hr>
+                </h4>
+
+                <ul id="setLang"></ul>
+            </div>
+            <div class="skill">
+                <h4>SKILL<br>
+                    <hr>
+                </h4>
+
+                <ul id="setSkill"></ul>
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="education">
+                <h4>EDUCATION<br>
+                    <hr>
+                </h4>
+
+                <ul id="setEdu"></ul>
+            </div>
+            <div class="experience">
+                <h4>EXPERIENCE<br>
+                    <hr>
+                </h4>
+
+                <ul id="setExp"></ul>
+            </div>
+            <div class="Hobby">
+                <h4>HOBBY <br>
+                    <hr>
+                </h4>
+
+                <ul id="setHobby"></ul>
+            </div>
+            <div class="certificate">
+                <h4>CERTIFICATE<br>
+                    <hr>
+                </h4>
+
+                <ul id="setCerti"></ul>
+            </div>
+            <div class="position">
+                <h4>OTHER ACTIVITY<br>
+                    <hr>
+                </h4>
+
+                <ul id="setAct"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="download" id="download">
+        <button id="downloadCv">Download</button>
+    </div>
+
+    <script src="cv.js"></script>
+    <script src="html2pdf.bundle.min.js"></script>
+
+
+</body>
+
+</html>

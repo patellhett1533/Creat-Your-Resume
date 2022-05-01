@@ -1,0 +1,533 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* resume templete design */
+
+
+.main{
+    display: grid;
+    grid-template-areas: 
+    'left right';
+    width: 620px;
+    height: 877px;
+    margin: 10px auto;
+    border: 1px solid #575757;
+    display: none;
+}
+.left i{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.left{
+    grid-area: left;
+    width: 210px;
+    padding: 0px 0px;
+    background-color: #d6d7d9;
+    overflow-wrap: break-word;
+}
+
+.left img{
+    width: 150px;
+    height: 150px;
+    margin: 35px auto;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+.name{
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.name h3{
+    font-weight: bolder;
+}
+.name p{
+    font-size: 13px;
+    font-weight: bold;
+}
+.contact{
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.contact h4{
+    letter-spacing: 3px;
+    font-weight: bolder;
+    width: 99px;
+}
+.contact p{
+    margin-left: 7px;
+    padding: 7px 0px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.contact p::before{
+    content: '\2022';
+    color: black;
+    font-size: bold;
+    margin-right: 8px;
+}
+.language{
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.language h4{
+    letter-spacing: 3px;
+    font-weight: bolder;
+    width: 113px;
+}    
+.language ul{
+    margin-left: 7px;
+   
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    list-style: none;
+}
+.language ul li{
+    padding: 7px 0px;
+}
+.language ul li::before{
+    content: '\2022';
+    color: black;
+    font-size: bold;
+    margin-right: 8px;
+}
+.Hobby{
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.Hobby h4{
+    letter-spacing: 3px;
+    font-weight: bolder;
+    width: 70px;
+}
+.Hobby ul{
+    margin-left: 7px;
+    padding: 7px 0px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    list-style: none;
+}
+.Hobby ul li::before{
+    content: '\2022';
+    color: black;
+    font-size: bold;
+    margin-right: 8px;
+}
+
+
+.edit{
+    filter: invert(100%);
+}
+
+
+.right{
+    grid-area: right;
+    width: 408px;
+    background-color: #e4e2e0;
+    border-left: 1px solid #575757;
+    
+}
+
+#dark{
+    margin: 3px 5px;
+    position: relative;
+    left: 360px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.education{
+    margin-top: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.education h4{
+    letter-spacing: 3px;
+    font-weight: bolder;
+    width: 120px;
+}
+.education ul{
+    list-style: none;
+}
+.education ul li{
+    margin-top: 5px;
+    padding: 5px 0px;
+    margin-left: 7px;
+}
+.education ul li h5::before{
+    content: '\2022';
+    color: black;
+    font-size: bold;
+    margin-right: 8px;
+}
+.education ul li h5{
+    margin-bottom: 5px;
+    font-size: medium;
+    font-weight: 600;
+}
+.education ul li h5 span{
+    font-size: 15px;
+    font-weight: bold;
+}
+.education ul li p{
+    margin-left: 7px;
+    margin-top: 3px;
+    font-weight: lighter;
+}
+
+.experience{
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+.experience h4{
+    letter-spacing: 3px;
+    font-weight: bolder;
+    width: 133px;
+}
+.experience ul{
+    list-style: none;
+}
+.experience ul li{
+    margin-top: 5px;
+    padding: 5px 0px;
+    margin-left: 7px;
+}
+.experience ul li h5::before{
+    content: '\2022';
+    color: black;
+    font-size: bold;
+    margin-right: 8px;
+}
+.experience ul li h5{
+    margin-bottom: 5px;
+    font-size: medium;
+    font-weight: bold;
+    text-align: ;
+}
+.experience ul li h5 span{
+    font-size: 15px;
+    font-weight: bold;
+}
+.experience ul li p{
+    margin-left: 7px;
+    margin-top: 3px;
+    font-weight: lighter;
+}
+
+.skill{
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+.skill h4{
+    letter-spacing: 3px;
+    font-weight: bolder;
+    width: 59px;
+}
+.skill ul{
+    list-style: none;
+}
+.skill ul li{
+    margin-top: 5px;
+    padding: 5px 0px;
+    margin-left: 7px;
+}
+.skill ul li::before{
+    content: '\2022';
+    color: black;
+    font-size: bold;
+    margin-right: 8px;
+}
+
+.certificate{
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.certificate h4{
+    letter-spacing: 3px;
+    font-weight: bolder;
+    width: 136px;
+}
+.certificate ul{
+    list-style: none;
+}
+.certificate ul li{
+    margin-top: 5px;
+    padding: 5px 0px;
+    margin-left: 7px;
+}
+.certificate ul li h5::before{
+    content: '\2022';
+    color: black;
+    font-size: bold;
+    margin-right: 8px;
+}
+.certificate ul li h5{
+    margin-bottom: 5px;
+    font-size: medium;
+    font-weight: bold;
+}
+.certificate ul li p{
+    margin-left: 7px;
+    margin-top: 3px;
+    font-weight: lighter;
+}
+
+.position{
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.position h4{
+    letter-spacing: 3px;
+    font-weight: bold;
+    width: 174px;
+}
+.position ul{
+    list-style: none;
+}
+.position ul li{
+    margin-top: 5px;
+    padding: 5px 0px;
+    margin-left: 7px;
+}
+.position ul li h5::before{
+    content: '\2022';
+    color: black;
+    font-size: bold;
+    margin-right: 8px;
+}
+.position ul li h5{
+    margin-bottom: 5px;
+    font-size: medium;
+    font-weight: bold;
+}
+.position ul li p{
+    margin-left: 7px;
+    margin-top: 3px;
+    font-weight: lighter;
+}
+
+/* Resume form design */
+
+.cv-form{
+  /* display: none; */
+}
+header{
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+.personal1{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 10px;
+    /* display: none; */
+}
+.personal1 h2{
+    margin: 5px 0px;
+    text-align: center;
+}
+.box{
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 100%;
+}
+.box label{
+    margin: 0px 45px;
+}
+.box input{
+    margin: 0px 45px;
+    font-size: 17px;
+    outline: none;
+    height: 50px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    border: 1px solid #575757;
+}
+#photo input{
+    color: #575757;
+    padding: 10px;
+}
+.button{
+    background-color: #2962ff;
+    width: 100%;
+    color: white;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+.contact1{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 10px;
+    display: none;
+}
+.contact1 h2{
+    margin: 5px 0px;
+    text-align: center;
+}
+.box:last-child{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.language1{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 10px;
+    display: none;
+}
+.language1 h2{
+    margin: 5px 0px;
+    text-align: center;
+}
+.box button{
+    margin: 10px 45px;
+    width: 50px;
+    height: 30px;
+    background-color: #2962ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.skill1{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 10px;
+    display: none;
+}
+.skill1 h2{
+    margin: 5px 0px;
+    text-align: center;
+}
+.education1{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 10px;
+    display: none;
+}
+.education1 h2{
+    margin: 5px 0px;
+    text-align: center;
+}
+#from{
+    display: flex;
+    flex-direction: row;
+}
+.from{
+    display: flex;
+    flex-direction: column;
+}
+.experience1{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 10px;
+    display: none;
+}
+.experience1 h2{
+    margin: 5px 0px;
+    text-align: center;
+}
+.hobby1{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 10px;
+    display: none;
+}
+.hobby1 h2{
+    margin: 5px 0px;
+    text-align: center;
+}
+.certi1{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 10px;
+    display: none;
+}
+.certi1 h2{
+    margin: 5px 0px;
+    text-align: center;
+}
+.act1{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 10px;
+    display: none;
+}
+.act1 h2{
+    margin: 5px 0px;
+    text-align: center;
+}
+.download{
+    margin: 20px 50px;
+    display: none;
+}
+.download button{
+    width: 100%;
+    height: 40px;
+    font-size: 17px;
+    background-color: #2962ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:668px){
+    #from{
+        display: flex;
+        flex-direction: column;
+    }
+    .main{
+        margin: auto 0px;
+    }
+}
